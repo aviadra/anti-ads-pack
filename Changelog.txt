@@ -1,0 +1,35 @@
+Changes from v2.3a to v2.3b:
+Corrected Dos/Unix CR format of the shell script & personal, to be Unix style.
+
+Changes from v2.3 to v2.3a:
+*Used the dos2unix converter on the disable_adds.sh script.
+(Sorry for any inconvenience this may have caused.)
+
+
+Changes from v2.2 to v2.3:
+*Commented out the aliases for “ls”. The color parameter, seems to have been omitted in builds higher than 17798 and therefor caused the alias to brake "ls"'s functionality.
+
+
+Changes from v2.1 to v2.2:
+*Took gravatar.com off of the personal list file.
+
+
+Changes from v2 to v2.1:
+*Pixel-server IP allocating command was changed to better support non-3digit octet network IPs, by changing the “cut” command that is used to set the pixel-server IP, to use delimiters and fields instead of characters.
+
+
+Changes from v1.5 to v2 include:
+
+*Updated the version of the pixel-server executable from v9 4th Nov 2009 witch was stripped out of any identifying printfs, to the much better performing and informing v19 provided by mstombs.
+*Added the pixel-server executable compiled by “Oki” for Atheros based routers.
+
+
+Changes from v1.1 to v1.5 include:
+
+*Change the script to not kill the pixel-server executable if it is already running when the script is executed.
+*Changed the script self cron-ing to run once a day instead of every hour
+
+
+Changes from v1 to v1.1 include:
+
+*Changed script to not blink leds as this feature is not hardware agnostic. The code is still there but it is advised that you map out your GPIOs before using it.
