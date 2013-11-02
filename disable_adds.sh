@@ -61,7 +61,7 @@ fi
  
 logger_ads "Adding a refresh cycle by puting the script in cron if it isnt there yet"
 if [[ -z "`cat /tmp/crontab | grep "/jffs/dns/disable_adds.sh"`" ]] ; then
-	echo '0 0 * * * root /jffs/dns/disable_adds.sh -m' > /tmp/crontab
+	echo '0 0 * * * root /jffs/dns/disable_adds.sh -m' >> /tmp/crontab
 	stopservice cron && logger_ads "stopped the cron service"
 	startservice cron && logger_ads "started the cron service"
 else
